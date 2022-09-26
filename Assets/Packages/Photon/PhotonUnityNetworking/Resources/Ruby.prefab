@@ -402,6 +402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46e67e3bd7a7c44bb273f46f84e53b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
+  chair: {fileID: 0}
   _speed: 5
   _anim: {fileID: 3972903155324676248}
   _rbody: {fileID: 3972903155324676255}

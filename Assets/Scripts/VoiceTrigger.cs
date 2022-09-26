@@ -9,6 +9,8 @@ public class VoiceTrigger : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _tipImage;
     [SerializeField] private TextMeshProUGUI _enterRoomImage;
     [SerializeField] private Collider2D _voiceTriggerArea;
+    
+
 
     private bool _entered = false;
 
@@ -17,6 +19,7 @@ public class VoiceTrigger : MonoBehaviour
         if (!_voiceTriggerArea) _voiceTriggerArea = GetComponent<Collider2D>();
         _tipImage.enabled = true;
         _enterRoomImage.enabled = false;
+        
     }
 
     private void Update()
@@ -63,5 +66,6 @@ public class VoiceTrigger : MonoBehaviour
     public void ToggleDialog()
     {
         ToggleDialog(!_enterRoomImage.enabled);
+        
     }
 }
