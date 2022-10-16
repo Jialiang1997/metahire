@@ -1,0 +1,581 @@
+fileFormatVersion: 2
+guid: 8375180fc23790347a09c169c216027e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4533337843515202226
+    second: zoom_university_hall_0
+  - first:
+      213: -8645381020695719435
+    second: zoom_university_hall_1
+  - first:
+      213: 1783369145959428860
+    second: zoom_university_hall_2
+  - first:
+      213: -8368698209147164498
+    second: zoom_university_hall 1_0
+  - first:
+      213: 4249558409266956362
+    second: zoom_university_hall 1_1
+  - first:
+      213: -4503616657956146864
+    second: zoom_university_hall 1_2
+  - first:
+      213: -8420954640412611500
+    second: zoom_university_hall 1_3
+  - first:
+      213: -7036761497268737079
+    second: zoom_university_hall 1_4
+  - first:
+      213: 2326204000752468150
+    second: zoom_university_hall 1_5
+  - first:
+      213: -9203520821683582492
+    second: zoom_university_hall 1_6
+  - first:
+      213: -532029118900279978
+    second: zoom_university_hall 1_7
+  - first:
+      213: 570888090109548661
+    second: zoom_university_hall 1_8
+  - first:
+      213: 3240119169942595045
+    second: zoom_university_hall 1_9
+  - first:
+      213: -2808140540943098897
+    second: zoom_university_hall 1_10
+  - first:
+      213: -2252522939304860129
+    second: zoom_university_hall 1_11
+  - first:
+      213: 7031845964486146983
+    second: zoom_university_hall 1_16
+  - first:
+      213: 5760113965461251916
+    second: zoom_university_hall 1_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zoom_university_hall 1_0
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 1230
+        width: 101
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8e55b61596cdb80800000000000000
+      internalID: -8368698209147164498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_1
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 944
+        width: 36
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4881acabd679fa30800000000000000
+      internalID: 4249558409266956362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_2
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 1471
+        width: 21
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051fdf1c280ff71c0800000000000000
+      internalID: -4503616657956146864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_3
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1473
+        width: 21
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c6784ee52c22b80800000000000000
+      internalID: -8420954640412611500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_4
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 1472
+        width: 21
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cba62a53b6685e90800000000000000
+      internalID: -7036761497268737079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_5
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 1472
+        width: 19
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b081f3c636584020800000000000000
+      internalID: 2326204000752468150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_6
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 1472
+        width: 21
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e983a43396864080800000000000000
+      internalID: -9203520821683582492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_7
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1410
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655e8cdc55add98f0800000000000000
+      internalID: -532029118900279978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_8
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1281
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5781b7971b33ce700800000000000000
+      internalID: 570888090109548661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_9
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1154
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5ac5ad73737fc20800000000000000
+      internalID: 3240119169942595045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_10
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1026
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb96b16e0b7709d0800000000000000
+      internalID: -2808140540943098897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_11
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 898
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16a052325e6db0e0800000000000000
+      internalID: -2252522939304860129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_12
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 1151
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee4fe5583f4608f0800000000000000
+      internalID: -574684799064650010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_13
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1094
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cad5915539b80e00800000000000000
+      internalID: 1011261754997856967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_14
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 936
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a6ba32b1a1a2830800000000000000
+      internalID: 4047075919010687629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_15
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1042
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df438a58ba900c20800000000000000
+      internalID: 3170704254252044241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_16
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 935
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abf57cf5a2269160800000000000000
+      internalID: 7031845964486146983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zoom_university_hall 1_17
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1033
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47a519122900ff40800000000000000
+      internalID: 5760113965461251916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      zoom_university_hall 1_14: 4047075919010687629
+      zoom_university_hall 1_1: 4249558409266956362
+      zoom_university_hall 1_3: -8420954640412611500
+      zoom_university_hall 1_15: 3170704254252044241
+      zoom_university_hall 1_17: 5760113965461251916
+      zoom_university_hall 1_9: 3240119169942595045
+      zoom_university_hall 1_11: -2252522939304860129
+      zoom_university_hall 1_16: 7031845964486146983
+      zoom_university_hall 1_5: 2326204000752468150
+      zoom_university_hall 1_0: -8368698209147164498
+      zoom_university_hall 1_10: -2808140540943098897
+      zoom_university_hall 1_12: -574684799064650010
+      zoom_university_hall 1_2: -4503616657956146864
+      zoom_university_hall 1_6: -9203520821683582492
+      zoom_university_hall 1_8: 570888090109548661
+      zoom_university_hall 1_7: -532029118900279978
+      zoom_university_hall 1_13: 1011261754997856967
+      zoom_university_hall 1_4: -7036761497268737079
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
