@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             var cname = t[0].gameObject.name;
             if (cname.Contains("Ruby")) _character = "Ruby";
+            else if (cname.Contains("test")) _character = "test";
+            else if (cname.Contains("todo")) _character = "todo";
             else if (cname.Contains("MrClock")) _character = "Robot";
         }
     }

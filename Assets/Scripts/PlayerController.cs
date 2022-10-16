@@ -8,10 +8,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviourPun
 {
     public static bool PlayerControlsEnabled { get; set; } = true;
+    public bool state = false;
 
     //===玩家朝向
     private Vector2 _lookDirection = new(1, 0); //默认朝右边
-    
+    public WebVoiceTrigger chair;
     [SerializeField] private float _speed = 5f;
     [SerializeField] private Animator _anim;
     [SerializeField] private Rigidbody2D _rbody; //刚体组件
@@ -80,5 +81,20 @@ public class PlayerController : MonoBehaviourPun
         position += moveVector * (_speed * Time.fixedDeltaTime);
         _rbody.MovePosition(position);
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+  
+                //if (state == false)
+                //{
+                //    state = true;
+                //    chair.ShowDialog();//显示进入房间
+                //}
+                //else if (state == true)
+                //{
+                //    state = false;
+                //    chair.RemoveDialog();//显示pressE对话框
+                //}
+            
+        }
     }
 }
