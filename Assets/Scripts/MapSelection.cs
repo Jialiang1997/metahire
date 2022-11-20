@@ -23,13 +23,13 @@ public class MapSelection : MonoBehaviour
     public void ChangeMap(int _change)
     {
         currentMap += _change;
-        if(currentMap > 17)
+        if(currentMap > 3)
         {
             currentMap = 0;
         }
         else if (currentMap < 0)
         {
-            currentMap = 17;
+            currentMap = 3;
         }
         SelectMap(currentMap);
         

@@ -37,16 +37,16 @@ public class sceneloader : MonoBehaviour
         switch (MapNumber)
         {
             case 0:
-                _sceneName = "Scene00";
-                break;
-            case 1:
                 _sceneName = "Scene01";
                 break;
+            case 1:
+                _sceneName = "Scene03";
+                break;
             case 2:
-                _sceneName = "Scene02";
+                _sceneName = "Scene11";
                 break;
             case 3:
-                _sceneName = "Scene03";
+                _sceneName = "Scene05";
                 break;
             case 4:
                 _sceneName = "Scene04";
