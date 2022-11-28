@@ -2852,7 +2852,7 @@ GameObject:
   - component: {fileID: 337555380}
   - component: {fileID: 337555381}
   m_Layer: 0
-  m_Name: Toggle Ruby Run
+  m_Name: Toggle Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4484,7 +4484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300046, guid: c1dbff5bcb29cdd4bbb8de3a29f2328c, type: 3}
+  m_Sprite: {fileID: 1490912545, guid: 763845bf2221c4b43baca6738808fcc4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
