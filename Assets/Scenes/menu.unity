@@ -998,7 +998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WelcomeWindow: {fileID: 987879186}
   SelectionWindow: {fileID: 1507101303}
-  MapNumber: 1
+  MapNumber: 3
 --- !u!4 &165158754
 Transform:
   m_ObjectHideFlags: 0
