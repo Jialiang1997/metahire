@@ -6,7 +6,8 @@ public class sceneloader : MonoBehaviour
 {
     public GameObject WelcomeWindow;
     public GameObject SelectionWindow;
-    public GameObject MapHolder;
+    public static GameObject MapHolder;
+    public int MapNumber = MapHolder.GetComponent<MapSelection>().currentMap;
     private string _sceneName;
 
     private void Start()
@@ -26,14 +27,15 @@ public class sceneloader : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             WelcomeWindow.SetActive(false);
-            SelectionWindow.SetActive(true);
+            //SelectionWindow.SetActive(true);
+            LoadScene();
 
             
         }
     }
     public void LoadScene()
     {
-        int MapNumber = MapHolder.GetComponent<MapSelection>().currentMap;
+        //int MapNumber = MapHolder.GetComponent<MapSelection>().currentMap;
         switch (MapNumber)
         {
             case 0:

@@ -998,7 +998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WelcomeWindow: {fileID: 987879186}
   SelectionWindow: {fileID: 1507101303}
-  MapHolder: {fileID: 756286596}
+  MapNumber: 1
 --- !u!4 &165158754
 Transform:
   m_ObjectHideFlags: 0
@@ -10393,7 +10393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e71095e92d3ab4fa7e29f3895e2745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentMap: 0
+  currentMap: 1
 --- !u!1 &757566969
 GameObject:
   m_ObjectHideFlags: 0
