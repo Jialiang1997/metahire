@@ -3923,7 +3923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300026, guid: 651c4abeb0812e74685da0e5a31c8dff, type: 3}
+  m_Sprite: {fileID: 1503436040, guid: 7a029c099261ec84e825401d71de1930, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6366,7 +6366,7 @@ GameObject:
   - component: {fileID: 873240357}
   - component: {fileID: 873240358}
   m_Layer: 0
-  m_Name: Toggle todo
+  m_Name: Toggle Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7424,7 +7424,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300046, guid: c1dbff5bcb29cdd4bbb8de3a29f2328c, type: 3}
+  m_Sprite: {fileID: -1814985339, guid: 89fbec2737dc16b4db1c8281888d25ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10938,7 +10938,7 @@ GameObject:
   - component: {fileID: 1991922849}
   - component: {fileID: 1991922850}
   m_Layer: 0
-  m_Name: Toggle MrClock
+  m_Name: Toggle White
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
