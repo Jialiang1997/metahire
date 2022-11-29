@@ -6,7 +6,8 @@ public class sceneloader : MonoBehaviour
 {
     public GameObject WelcomeWindow;
     public GameObject SelectionWindow;
-    public GameObject MapHolder;
+    public static GameObject MapHolder;
+    public int MapNumber = MapHolder.GetComponent<MapSelection>().currentMap;
     private string _sceneName;
 
     private void Start()
@@ -26,27 +27,28 @@ public class sceneloader : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             WelcomeWindow.SetActive(false);
-            SelectionWindow.SetActive(true);
+            //SelectionWindow.SetActive(true);
+            LoadScene();
 
             
         }
     }
     public void LoadScene()
     {
-        int MapNumber = MapHolder.GetComponent<MapSelection>().currentMap;
+        //int MapNumber = MapHolder.GetComponent<MapSelection>().currentMap;
         switch (MapNumber)
         {
             case 0:
-                _sceneName = "Scene00";
-                break;
-            case 1:
                 _sceneName = "Scene01";
                 break;
+            case 1:
+                _sceneName = "Scene03";
+                break;
             case 2:
-                _sceneName = "Scene02";
+                _sceneName = "Scene11";
                 break;
             case 3:
-                _sceneName = "Scene03";
+                _sceneName = "Scene05";
                 break;
             case 4:
                 _sceneName = "Scene04";
