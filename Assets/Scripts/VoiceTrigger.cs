@@ -1,9 +1,7 @@
 using Photon.Pun;
-using Photon.Voice.PUN;
-using Photon.Voice.Unity;
 using TMPro;
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VoiceTrigger : MonoBehaviour
 {
@@ -17,12 +15,9 @@ public class VoiceTrigger : MonoBehaviour
 
     private void Start()
     {
-        
-
         if (!_voiceTriggerArea) _voiceTriggerArea = GetComponent<Collider2D>();
         _tipImage.enabled = true;
         _enterRoomImage.enabled = false;
-        
     }
 
     private void Update()
@@ -33,10 +28,10 @@ public class VoiceTrigger : MonoBehaviour
             GameObject[] gameObjects = second.GetRootGameObjects();
             voiceCanvas = GameObject.FindGameObjectWithTag("VoiceCanvas");
             voiceWindow = voiceCanvas.transform.GetChild(0).gameObject;
-            
+
             if (voiceWindow.activeSelf)
             {
-               voiceWindow.SetActive(false);
+                voiceWindow.SetActive(false);
             }
             else if (!voiceWindow.activeSelf)
             {
@@ -85,6 +80,5 @@ public class VoiceTrigger : MonoBehaviour
     public void ToggleDialog()
     {
         ToggleDialog(!_enterRoomImage.enabled);
-        
     }
 }
