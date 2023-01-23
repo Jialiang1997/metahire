@@ -1,15 +1,18 @@
 {
     "name": "awrtc",
+    "rootNamespace": "",
     "references": [
         "awrtc_browser",
-        "awrtc_common"
+        "awrtc_common",
+        "Unity.TextMeshPro"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": []
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

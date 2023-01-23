@@ -7,6 +7,7 @@ using Byn.Awrtc;
 using Byn.Awrtc.Unity;
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -56,12 +57,12 @@ namespace Byn.Unity.Examples
         /// <summary>
         /// Input field used to enter the room name.
         /// </summary>
-        public InputField uRoomName;
+        public TMP_InputField uRoomName;
 
         /// <summary>
         /// Input field to enter a new message.
         /// </summary>
-        public InputField uMessageField;
+        public TMP_InputField uMessageField;
 
         /// <summary>
         /// Output message list to show incoming and sent messages + output messages of the
@@ -151,13 +152,7 @@ namespace Byn.Unity.Examples
         /// </summary>
         private Dictionary<ConnectionId, VideoData> mVideoUiElements = new Dictionary<ConnectionId, VideoData>();
 
-        public int ConnectionCount
-        {
-            get
-            {
-                return mVideoUiElements.Count - 1;
-            }
-        }
+        public int ConnectionCount => mVideoUiElements.Count - 1;
 
         //We create this randomly for now in Start(). It could be entered by the user via the UI
         private string mOwnUserName = "User";
