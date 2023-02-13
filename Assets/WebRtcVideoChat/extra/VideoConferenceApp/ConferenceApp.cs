@@ -177,7 +177,7 @@ namespace Byn.Unity.Examples
                 StartCoroutine(ExampleGlobals.RequestPermissions());
                 //use video and audio by default (the UI is toggled on by default as well it will change on click )
                 MediaConfig.Video = false;
-                MediaConfig.Audio = false;
+                MediaConfig.Audio = true;
                 MediaConfig.VideoDeviceName = UnityCallFactory.Instance.GetDefaultVideoDevice();
 
                 NetConfig.IceServers.Add(ExampleGlobals.DefaultIceServer);

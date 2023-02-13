@@ -257,8 +257,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 86345879}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &86345879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -418,8 +416,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 209722775}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &209722775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -579,8 +575,6 @@ MonoBehaviour:
   _tipImage: {fileID: 735949436}
   _enterRoomImage: {fileID: 1816571135}
   _voiceTriggerArea: {fileID: 322881996}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &322881996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -655,8 +649,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 404209018}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &404209018
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1062,8 +1054,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -555, y: -408}
-  m_SizeDelta: {x: 736.9, y: 60}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 450, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664679045
 MonoBehaviour:
@@ -1197,8 +1189,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -555, y: -408}
-  m_SizeDelta: {x: 582.3, y: 60}
+  m_AnchoredPosition: {x: -565.9, y: -267.4}
+  m_SizeDelta: {x: 450, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735949436
 MonoBehaviour:
@@ -1500,8 +1492,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 960870612}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &960870612
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1687,8 +1677,6 @@ MonoBehaviour:
   _tipImage: {fileID: 735949436}
   _enterRoomImage: {fileID: 1816571135}
   _voiceTriggerArea: {fileID: 1000258248}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1000258248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1763,8 +1751,6 @@ MonoBehaviour:
   _tipImage: {fileID: 735949436}
   _enterRoomImage: {fileID: 1816571135}
   _voiceTriggerArea: {fileID: 1089276383}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1089276383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1950,8 +1936,6 @@ MonoBehaviour:
   _tipImage: {fileID: 735949436}
   _enterRoomImage: {fileID: 1816571135}
   _voiceTriggerArea: {fileID: 1316957390}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1316957390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2026,8 +2010,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 1383821174}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1383821174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2102,8 +2084,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 1473090864}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1473090864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2178,8 +2158,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 1529696100}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1529696100
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2254,8 +2232,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 1557155508}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1557155508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2330,8 +2306,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 1589934163}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1589934163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2393,8 +2367,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -555, y: -408}
-  m_SizeDelta: {x: 582.3, y: 60}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 450, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628834410
 MonoBehaviour:
@@ -2723,8 +2697,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -555, y: -408}
-  m_SizeDelta: {x: 736.9, y: 60}
+  m_AnchoredPosition: {x: -565.9, y: -267.4}
+  m_SizeDelta: {x: 450, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1816571135
 MonoBehaviour:
@@ -2871,8 +2845,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 1960517409}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1960517409
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2947,8 +2919,6 @@ MonoBehaviour:
   _tipImage: {fileID: 735949436}
   _enterRoomImage: {fileID: 1816571135}
   _voiceTriggerArea: {fileID: 2009300097}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &2009300097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3012,7 +2982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.43, y: -0.32}
+  m_AnchoredPosition: {x: -8.4, y: -3.79}
   m_SizeDelta: {x: 3840, y: 2160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2054482224
@@ -3192,8 +3162,6 @@ MonoBehaviour:
   _tipImage: {fileID: 735949436}
   _enterRoomImage: {fileID: 1816571135}
   _voiceTriggerArea: {fileID: 2120636665}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &2120636665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3227,6 +3195,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 581202211}
     m_Modifications:
+    - target: {fileID: 1129816207, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129816207, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129816207, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129816207, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1129816208, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
       propertyPath: m_text
       value: Chatting enabled... Enter Room Number 11-2
@@ -3255,6 +3239,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.28
       objectReference: {fileID: 0}
+    - target: {fileID: 1328299630, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328299630, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328299630, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328299630, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1328299631, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
       propertyPath: m_fontSize
       value: 20
@@ -3265,15 +3265,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2009136544, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.86
+      value: -13.12
       objectReference: {fileID: 0}
     - target: {fileID: 2009136544, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.59
+      value: -1.82
       objectReference: {fileID: 0}
     - target: {fileID: 2009136546, guid: 3ba7c24befa5fa749b70d0fa7c28320e, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 582519145244424586, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
         type: 3}
@@ -3290,6 +3290,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -6.69
       objectReference: {fileID: 0}
+    - target: {fileID: 582519145282956476, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 582519145282956476, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 582519145282956476, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 582519145282956476, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 582519145282956477, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
         type: 3}
       propertyPath: m_fontSize
@@ -3299,6 +3319,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSizeBase
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 582519146500157566, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 582519146500157566, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 582519146500157566, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 582519146500157566, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 582519146500157567, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
         type: 3}
@@ -3318,17 +3358,17 @@ PrefabInstance:
     - target: {fileID: 582519146726422406, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.82
+      value: -12.6
       objectReference: {fileID: 0}
     - target: {fileID: 582519146726422406, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3
+      value: -6.58
       objectReference: {fileID: 0}
     - target: {fileID: 582519146726422409, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
         type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 582519147246310701, guid: 3ba7c24befa5fa749b70d0fa7c28320e,
         type: 3}
@@ -3485,8 +3525,6 @@ MonoBehaviour:
   _tipImage: {fileID: 2123200006}
   _enterRoomImage: {fileID: 2123200005}
   _voiceTriggerArea: {fileID: 2129967568}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &2129967568
 BoxCollider2D:
   m_ObjectHideFlags: 0
