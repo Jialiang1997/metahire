@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class EnterRoomControl : MonoBehaviourPunCallbacks
 {
-    [Header("Room Info"), Range(1, 16)]
-    [SerializeField] private int _roomCapacity = 4;
+    [Header("Room Info")]
+    [SerializeField, Range(1, 16)] private int _roomCapacity = 4;
     [Header("Controllers")]
     [SerializeField] private LobbyControl _lobbyControl;
     [SerializeField] private LoginControl _loginControl;
@@ -20,7 +20,6 @@ public class EnterRoomControl : MonoBehaviourPunCallbacks
 
     [SerializeField] private Canvas _thisCanvas;
 
-    // Start is called before the first frame update
     private void Start()
     {
         if (!_thisCanvas) _thisCanvas = GetComponent<Canvas>();
@@ -34,9 +33,7 @@ public class EnterRoomControl : MonoBehaviourPunCallbacks
                 return;
             }
 
-            //var options = new RoomOptions {MaxPlayers = System.Convert.ToByte(_roomCapacity)};
-            //PhotonNetwork.JoinOrCreateRoom(_roomNameInputField.text, options, customLobby);
-            CreateRoom();
+            JoinOrCreateRoom();
         });
 
         _lobbyButton.onClick.AddListener(() =>
@@ -71,12 +68,15 @@ public class EnterRoomControl : MonoBehaviourPunCallbacks
     /// See docs <see href="https://doc.photonengine.com/pun/v2/lobby-and-matchmaking/matchmaking-and-lobby#default_lobby_type">
     /// here</see>.
     /// </summary>
-    private void CreateRoom()
+    private void JoinOrCreateRoom()
     {
-        var roomOptions = new RoomOptions { MaxPlayers = System.Convert.ToByte(_roomCapacity) };
-        roomOptions.CustomRoomProperties = new Hashtable { { LobbyControl.MAP_PROP_KEY, Sceneloader.LobbyName } };
-        roomOptions.CustomRoomPropertiesForLobby = new string[] { LobbyControl.MAP_PROP_KEY };
-        PhotonNetwork.CreateRoom(Sceneloader.LobbyName, roomOptions, LobbyControl.customLobby);
+        var roomOptions = new RoomOptions
+        {
+            MaxPlayers = System.Convert.ToByte(_roomCapacity),
+            CustomRoomProperties = new Hashtable { { LobbyControl.MAP_PROP_KEY, Sceneloader.LobbyName } },
+            CustomRoomPropertiesForLobby = new string[] { LobbyControl.MAP_PROP_KEY }
+        };
+        PhotonNetwork.JoinOrCreateRoom(_roomNameInputField.text, roomOptions, LobbyControl.customLobby);
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
