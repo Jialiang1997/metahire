@@ -1,3 +1,4 @@
+using ExitGames.Client.Photon;
 using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
@@ -6,7 +7,7 @@ using UnityEngine.UI;
 
 public class EnterRoomControl : MonoBehaviourPunCallbacks
 {
-    [Header("Room Info")]
+    [Header("Room Info"), Range(1, 16)]
     [SerializeField] private int _roomCapacity = 4;
     [Header("Controllers")]
     [SerializeField] private LobbyControl _lobbyControl;
@@ -33,8 +34,9 @@ public class EnterRoomControl : MonoBehaviourPunCallbacks
                 return;
             }
 
-            var options = new RoomOptions {MaxPlayers = System.Convert.ToByte(_roomCapacity)};
-            PhotonNetwork.JoinOrCreateRoom(_roomNameInputField.text, options, TypedLobby.Default);
+            //var options = new RoomOptions {MaxPlayers = System.Convert.ToByte(_roomCapacity)};
+            //PhotonNetwork.JoinOrCreateRoom(_roomNameInputField.text, options, customLobby);
+            CreateRoom();
         });
 
         _lobbyButton.onClick.AddListener(() =>
@@ -65,13 +67,29 @@ public class EnterRoomControl : MonoBehaviourPunCallbacks
         if (!_backButton) Debug.LogWarning($"{name}:{nameof(EnterRoomControl)}.{nameof(_backButton)} is not defined");
     }
 
+    /// <summary>
+    /// See docs <see href="https://doc.photonengine.com/pun/v2/lobby-and-matchmaking/matchmaking-and-lobby#default_lobby_type">
+    /// here</see>.
+    /// </summary>
+    private void CreateRoom()
+    {
+        var roomOptions = new RoomOptions { MaxPlayers = System.Convert.ToByte(_roomCapacity) };
+        roomOptions.CustomRoomProperties = new Hashtable { { LobbyControl.MAP_PROP_KEY, Sceneloader.LobbyName } };
+        roomOptions.CustomRoomPropertiesForLobby = new string[] { LobbyControl.MAP_PROP_KEY };
+        PhotonNetwork.CreateRoom(Sceneloader.LobbyName, roomOptions, LobbyControl.customLobby);
+    }
+
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
+        Debug.LogWarningFormat("Room Joined failed with error code {0} and error message {1}", returnCode, message);
         _errorText.text = message;
     }
 
-    public void SetActive(bool isActive)
+    public override void OnCreateRoomFailed(short returnCode, string message)
     {
-        _thisCanvas.enabled = isActive;
+        Debug.LogWarningFormat("Room creation failed with error code {0} and error message {1}", returnCode, message);
+        _errorText.text = message;
     }
+
+    public void SetActive(bool isActive) => _thisCanvas.enabled = isActive;
 }

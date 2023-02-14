@@ -58,6 +58,7 @@ public class LoginControl : MonoBehaviour
                             _errorText.text = string.Empty;
                             SetActive(false);
                             _enterRoomControl.SetActive(true);
+                            JoinLobby();
                             Debug.Log($"Logged in as {getAccountInfoResult.AccountInfo.Username}");
                         },
                         getAccountInfoError =>
@@ -96,8 +97,8 @@ public class LoginControl : MonoBehaviour
         if (!_errorText) Debug.LogWarning($"{name}:{nameof(PlayerController)}.{nameof(_errorText)} is not defined");
     }
 
-    public void SetActive(bool isActive)
-    {
-        _thisCanvas.enabled = isActive;
-    }
+    public void JoinLobby() => PhotonNetwork.JoinLobby(LobbyControl.customLobby);
+
+
+    public void SetActive(bool isActive) => _thisCanvas.enabled = isActive;
 }

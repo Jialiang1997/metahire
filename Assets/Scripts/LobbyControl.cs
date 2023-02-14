@@ -14,6 +14,16 @@ public class LobbyControl : MonoBehaviourPunCallbacks
     [SerializeField] private Transform _roomsListContentT;
     [SerializeField] private Canvas _thisCanvas;
 
+
+    public static TypedLobby customLobby;
+    public const string MAP_PROP_KEY = "C0";
+    public static readonly string sqlMapLobbyFilter = $"{MAP_PROP_KEY} = '{Sceneloader.LobbyName}'";
+
+    private void Awake()
+    {
+        customLobby = new TypedLobby(Sceneloader.LobbyName, LobbyType.SqlLobby);
+    }
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -54,12 +64,36 @@ public class LobbyControl : MonoBehaviourPunCallbacks
                 }
             }
     }
+
+    private void ClearList()
+    {
+        foreach (var item in _roomItemsDic.Values)
+            if (item) Destroy(item.gameObject);
+        
+        _roomItemsDic.Clear();
+    }
+
+    public override void OnJoinedLobby()
+    {
+        ClearList();
+        GetCustomRoomList(sqlMapLobbyFilter);
+    }
+
+    public override void OnLeftLobby() => ClearList();
+
+    public override void OnDisconnected(DisconnectCause cause) => ClearList();
+
     private void OnValidate()
     {
         if (!_enterRoomControl) Debug.LogWarning($"{name}:{nameof(LobbyControl)}.{nameof(_enterRoomControl)} is not defined");
         if (!_roomItemImageP) Debug.LogWarning($"{name}:{nameof(LobbyControl)}.{nameof(_roomItemImageP)} is not defined");
         if (!_roomsListContentT) Debug.LogWarning($"{name}:{nameof(LobbyControl)}.{nameof(_roomsListContentT)} is not defined");
         if (!_backButton) Debug.LogWarning($"{name}:{nameof(LobbyControl)}.{nameof(_backButton)} is not defined");
+    }
+
+    private void GetCustomRoomList(string sqlLobbyFilter)
+    {
+        PhotonNetwork.GetCustomRoomList(customLobby, sqlLobbyFilter);
     }
 
     public void SetActive(bool isActive)

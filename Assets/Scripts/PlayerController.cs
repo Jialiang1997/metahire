@@ -81,8 +81,8 @@ public class PlayerController : MonoBehaviourPun
         position += moveVector * (_speed * Time.fixedDeltaTime);
         _rbody.MovePosition(position);
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
   
                 //if (state == false)
                 //{
@@ -95,6 +95,6 @@ public class PlayerController : MonoBehaviourPun
                 //    chair.RemoveDialog();//显示pressE对话框
                 //}
             
-        }
+        //}
     }
 }
