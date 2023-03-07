@@ -18,11 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene03.unity
     guid: b34c49655ef8e8e499d18008bc251fb0
   - enabled: 0
-    path: Assets/Scenes/Scene05.unity
-    guid: 5d162d16680354b40abcca23bb6eccd8
-  - enabled: 0
     path: Assets/Scenes/Scene11.unity
     guid: bf70815487957a6479d0573c56c200d3
+  - enabled: 0
+    path: Assets/Scenes/Scene05.unity
+    guid: 5d162d16680354b40abcca23bb6eccd8
   - enabled: 0
     path: Assets/Scenes/Scene00.unity
     guid: 07b6856cf90de6a4283e9651c4c0422c

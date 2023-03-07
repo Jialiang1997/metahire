@@ -16,10 +16,6 @@ public class WebVoiceTrigger : MonoBehaviour
         enterRoomImage.SetActive(false); //
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-
     public void ShowDialog()
     {
         tipImage.SetActive(false);
