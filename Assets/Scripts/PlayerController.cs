@@ -1,4 +1,5 @@
-﻿using Photon.Pun;
+﻿using Cinemachine;
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ public class PlayerController : MonoBehaviourPun
     [SerializeField] private float _speed = 5f;
     [SerializeField] private Animator _anim;
     [SerializeField] private Rigidbody2D _rbody; //刚体组件
-    [SerializeField] private Camera _playerCamera;
+    [SerializeField] private CinemachineVirtualCameraBase _playerCMCamera;
     [SerializeField] private TextMeshProUGUI _nameTag;
     [SerializeField] private AudioSource _walkAudio;
 
@@ -32,23 +33,25 @@ public class PlayerController : MonoBehaviourPun
         if (photonView.IsMine)
         {
             _nameTag.text = PhotonNetwork.NickName;
-            _playerCamera.gameObject.SetActive(true);
+            _playerCMCamera.m_Priority = 20;
+            var o = GameObject.FindWithTag("CameraConfiner");
+            var b = _playerCMCamera.GetComponent<CinemachineConfiner2D>();
+            if (o && b) b.m_BoundingShape2D = o.GetComponent<Collider2D>();
         }
         else
         {
             _nameTag.text = photonView.Owner.NickName;
-            _playerCamera.gameObject.SetActive(false);
         }
     }
 
     private void OnValidate()
     {
         if (!_nameTag) Debug.LogWarning($"{name}:{nameof(PlayerController)}.{nameof(_nameTag)} is not defined");
-        if (!_playerCamera) Debug.LogWarning($"{name}:{nameof(PlayerController)}.{nameof(_anim)} is not defined");
+        if (!_playerCMCamera) Debug.LogWarning($"{name}:{nameof(PlayerController)}.{nameof(_playerCMCamera)} is not defined");
     }
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!photonView.IsMine && PhotonNetwork.IsConnected || !PlayerControlsEnabled)
             return;
@@ -76,7 +79,7 @@ public class PlayerController : MonoBehaviourPun
         var position = _rbody.position;
         //position.x += moveX * speed * Time.fixedDeltaTime;
         //position.y += moveY * speed * Time.fixedDeltaTime;
-        position += moveVector * (_speed * Time.fixedDeltaTime);
+        position += moveVector.normalized * (_speed * Time.fixedDeltaTime);
         _rbody.MovePosition(position);
     }
 }

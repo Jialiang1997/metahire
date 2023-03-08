@@ -17,18 +17,12 @@ public class VoiceTrigger : MonoBehaviour
         if (!_voiceTriggerArea) _voiceTriggerArea = GetComponent<Collider2D>();
         _tipImage.enabled = true;
         _enterRoomImage.enabled = false;
-        //var voiceCanvas = GameObject.FindGameObjectWithTag("VoiceCanvas");
-        //voiceWindow = voiceCanvas.transform.GetChild(0).gameObject;
     }
 
     private void Update()
     {
         if (_entered && Input.GetKeyDown(KeyCode.E))
         {
-            //Scene second = SceneManager.GetSceneByName("mainlogin");
-            //GameObject[] gameObjects = second.GetRootGameObjects();
-            
-            //voiceWindow.SetActive(!voiceWindow.activeSelf);
             ToggleDialog();
         }
     }
