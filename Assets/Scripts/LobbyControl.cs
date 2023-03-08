@@ -21,6 +21,7 @@ public class LobbyControl : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
+        Debug.Log($"Current lobby is {Sceneloader.LobbyName}");
         customLobby = new TypedLobby(Sceneloader.LobbyName, LobbyType.SqlLobby);
     }
 

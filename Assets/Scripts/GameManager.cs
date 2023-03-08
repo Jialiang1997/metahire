@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             else if (cname.Contains("test")) _character = "test";
             else if (cname.Contains("Blue")) _character = "Girl";
             else if (cname.Contains("White")) _character = "White";
+            else if (cname.Contains("Hair")) _character = "LongHairBoy";
         }
     }
 

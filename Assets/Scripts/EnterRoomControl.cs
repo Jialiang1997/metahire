@@ -33,7 +33,7 @@ public class EnterRoomControl : MonoBehaviourPunCallbacks
                 return;
             }
 
-            JoinOrCreateRoom();
+            CreateRoom();
         });
 
         _lobbyButton.onClick.AddListener(() =>
@@ -68,7 +68,7 @@ public class EnterRoomControl : MonoBehaviourPunCallbacks
     /// See docs <see href="https://doc.photonengine.com/pun/v2/lobby-and-matchmaking/matchmaking-and-lobby#default_lobby_type">
     /// here</see>.
     /// </summary>
-    private void JoinOrCreateRoom()
+    private void CreateRoom()
     {
         var roomOptions = new RoomOptions
         {
@@ -76,7 +76,7 @@ public class EnterRoomControl : MonoBehaviourPunCallbacks
             CustomRoomProperties = new Hashtable { { LobbyControl.MAP_PROP_KEY, Sceneloader.LobbyName } },
             CustomRoomPropertiesForLobby = new string[] { LobbyControl.MAP_PROP_KEY }
         };
-        PhotonNetwork.JoinOrCreateRoom(_roomNameInputField.text, roomOptions, LobbyControl.customLobby);
+        PhotonNetwork.CreateRoom(_roomNameInputField.text, roomOptions, LobbyControl.customLobby);
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
