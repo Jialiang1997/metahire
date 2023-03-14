@@ -346,8 +346,6 @@ MonoBehaviour:
   _tipImage: {fileID: 1475656702}
   _enterRoomImage: {fileID: 1259027179}
   _voiceTriggerArea: {fileID: 103665794}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &103665794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -596,8 +594,6 @@ MonoBehaviour:
   _tipImage: {fileID: 785124968}
   _enterRoomImage: {fileID: 785124967}
   _voiceTriggerArea: {fileID: 235002863}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &235002863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -899,8 +895,6 @@ MonoBehaviour:
   _tipImage: {fileID: 785124968}
   _enterRoomImage: {fileID: 785124967}
   _voiceTriggerArea: {fileID: 350165279}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &350165279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1033,8 +1027,6 @@ MonoBehaviour:
   _tipImage: {fileID: 1475656702}
   _enterRoomImage: {fileID: 1259027179}
   _voiceTriggerArea: {fileID: 415249660}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &415249660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1197,8 +1189,8 @@ Transform:
   m_GameObject: {fileID: 437439633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.0019, y: 5.0019, z: 0}
-  m_LocalScale: {x: 6.2, y: 6.2, z: 6.2}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 5.8, y: 5.8, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 986368456}
   - {fileID: 349496243}
@@ -1211,6 +1203,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &495903857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495903858}
+  - component: {fileID: 495903859}
+  m_Layer: 0
+  m_Name: background confiner
+  m_TagString: CameraConfiner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495903858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495903857}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0004136464, y: 0.02653596, z: 0}
+  m_LocalScale: {x: 0.98751825, y: 0.98751825, z: 0.98751825}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 986368456}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &495903859
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495903857}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.2, y: 3.2}
+      - {x: -3.2, y: 3.2}
+      - {x: -3.2, y: -3.2}
+      - {x: 3.2, y: -3.2}
 --- !u!1 &508135557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,8 +1312,6 @@ MonoBehaviour:
   _tipImage: {fileID: 1475656702}
   _enterRoomImage: {fileID: 1259027179}
   _voiceTriggerArea: {fileID: 508135560}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &508135560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1419,7 +1470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &768150826
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1844,6 +1895,7 @@ Transform:
   - {fileID: 65911161}
   - {fileID: 925694691}
   - {fileID: 2097279020}
+  - {fileID: 495903858}
   m_Father: {fileID: 437439635}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2011,11 +2063,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2.8762648, y: -2.5896063}
-  - {x: -2.8996837, y: 2.7832391}
-  - {x: 2.893489, y: 2.7771592}
-  - {x: 2.8697152, y: -2.588288}
-  - {x: -2.8887427, y: -2.5506601}
+  - {x: -2.85, y: -2.5}
+  - {x: -2.85, y: 2.5}
+  - {x: 2.85, y: 2.5}
+  - {x: 2.85, y: -2.5}
+  - {x: -2.85, y: -2.5}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2032,11 +2084,11 @@ GameObject:
   - component: {fileID: 1115554564}
   m_Layer: 0
   m_Name: Living Room 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1115554564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2372,7 +2424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1327027135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2573,8 +2625,6 @@ MonoBehaviour:
   _tipImage: {fileID: 1475656702}
   _enterRoomImage: {fileID: 1259027179}
   _voiceTriggerArea: {fileID: 1463398314}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1463398314
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2900,8 +2950,6 @@ MonoBehaviour:
   _tipImage: {fileID: 785124968}
   _enterRoomImage: {fileID: 785124967}
   _voiceTriggerArea: {fileID: 1549692229}
-  voiceCanvas: {fileID: 0}
-  voiceWindow: {fileID: 0}
 --- !u!61 &1549692229
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2944,7 +2992,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1553010435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3029,7 +3077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1611420184
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3226,6 +3274,7 @@ GameObject:
   - component: {fileID: 2098677407}
   - component: {fileID: 2098677406}
   - component: {fileID: 2098677405}
+  - component: {fileID: 2098677409}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3301,7 +3350,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 10.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3325,10 +3374,44 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098677404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: -10}
+  m_LocalPosition: {x: -4.96, y: 3.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2098677409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098677404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowDebugText: 0
+  m_ShowCameraFrustum: 1
+  m_IgnoreTimeScale: 0
+  m_WorldUpOverride: {fileID: 0}
+  m_UpdateMethod: 2
+  m_BlendUpdateMethod: 1
+  m_DefaultBlend:
+    m_Style: 1
+    m_Time: 2
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
+  m_CameraCutEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CameraActivatedEvent:
+    m_PersistentCalls:
+      m_Calls: []

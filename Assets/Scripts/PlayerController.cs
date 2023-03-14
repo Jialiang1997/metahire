@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviourPun
     [SerializeField] private float _speed = 5f;
     [SerializeField] private Animator _anim;
     [SerializeField] private Rigidbody2D _rbody; //刚体组件
-    [SerializeField] private CinemachineVirtualCameraBase _playerCMCamera;
+    [SerializeField] private CinemachineVirtualCamera _playerCMCamera;
     [SerializeField] private TextMeshProUGUI _nameTag;
     [SerializeField] private AudioSource _walkAudio;
 
@@ -34,9 +34,11 @@ public class PlayerController : MonoBehaviourPun
         {
             _nameTag.text = PhotonNetwork.NickName;
             _playerCMCamera.m_Priority = 20;
+            _playerCMCamera.m_Lens.OrthographicSize = Sceneloader.OrthographicSize == -1? 5.8f: Sceneloader.OrthographicSize;
             var o = GameObject.FindWithTag("CameraConfiner");
             var b = _playerCMCamera.GetComponent<CinemachineConfiner2D>();
             if (o && b) b.m_BoundingShape2D = o.GetComponent<Collider2D>();
+            
         }
         else
         {

@@ -154,6 +154,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SceneToLoad>k__BackingField: 1
   <SceneName>k__BackingField: Scene01
+  <OrthographicSizeToLoad>k__BackingField: 5.8
+  OrthographicSizePresetForSence:
+  - 0
+  - 5.8
+  - 0
+  - 7
+  - 0
+  - 9
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 9
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!4 &165158754
 Transform:
   m_ObjectHideFlags: 0
