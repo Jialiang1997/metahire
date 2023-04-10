@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 3604053982129146225}
   - component: {fileID: 1398351783524354213}
   m_Layer: 0
-  m_Name: LongHairBoy
+  m_Name: dark_longsleevewithdreads_yellow_black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,7 +394,7 @@ SpriteRenderer:
   m_SortingLayerID: 1865429307
   m_SortingLayer: 1
   m_SortingOrder: 5
-  m_Sprite: {fileID: -1464539052, guid: 34e0c3f66af0feb4daa0992ba57bdb16, type: 3}
+  m_Sprite: {fileID: 2121907249, guid: d20b1f94825b9c04da9e6c6244e1b11e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -415,7 +415,7 @@ Animator:
   m_GameObject: {fileID: 5683480831495308513}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 042eb02f6295eee478cf7ffd0d36e3c3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5a58b98a9f66e534e95e46a5bca75907, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -482,7 +482,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.939394, y: 1.939394}
+    oldSize: {x: 1.1764706, y: 1.8235294}
     newSize: {x: 1.2806249, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -34,11 +34,14 @@ public class GameManager : MonoBehaviourPunCallbacks
         else
         {
             var cname = t[0].gameObject.name;
-            if (cname.Contains("Red")) _character = "Red";
-            else if (cname.Contains("test")) _character = "test";
-            else if (cname.Contains("Blue")) _character = "Girl";
-            else if (cname.Contains("White")) _character = "White";
-            else if (cname.Contains("Hair")) _character = "LongHairBoy";
+            //if (cname.Contains("Red")) _character = "Red";
+            //else if (cname.Contains("test")) _character = "test";
+            //else if (cname.Contains("Blue")) _character = "Girl";
+            //else if (cname.Contains("White")) _character = "White";
+            //else 
+            if (cname.Contains("Hair")) _character = "LongHairBoy";
+            else if (cname.Contains("dark")) _character = "dark_longsleevewithdreads_yellow_black";
+            else if (cname.Contains("Female")) _character = "FemaleDress-Red-Brown";
         }
     }
 

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LongHairBoyMoveUp
+  m_Name: FemaleDress-Red-BrownMoveUp
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1719387196, guid: 34e0c3f66af0feb4daa0992ba57bdb16, type: 3}
+      value: {fileID: -1160703644, guid: dcc2a949435e1454fb2cfbadd18e163e, type: 3}
     - time: 0.083333336
-      value: {fileID: -2137015909, guid: 34e0c3f66af0feb4daa0992ba57bdb16, type: 3}
+      value: {fileID: -86065058, guid: dcc2a949435e1454fb2cfbadd18e163e, type: 3}
     - time: 0.16666667
-      value: {fileID: -1719387196, guid: 34e0c3f66af0feb4daa0992ba57bdb16, type: 3}
+      value: {fileID: -1160703644, guid: dcc2a949435e1454fb2cfbadd18e163e, type: 3}
     - time: 0.25
-      value: {fileID: -1388476281, guid: 34e0c3f66af0feb4daa0992ba57bdb16, type: 3}
+      value: {fileID: -585958495, guid: dcc2a949435e1454fb2cfbadd18e163e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1719387196, guid: 34e0c3f66af0feb4daa0992ba57bdb16, type: 3}
-    - {fileID: -2137015909, guid: 34e0c3f66af0feb4daa0992ba57bdb16, type: 3}
-    - {fileID: -1719387196, guid: 34e0c3f66af0feb4daa0992ba57bdb16, type: 3}
-    - {fileID: -1388476281, guid: 34e0c3f66af0feb4daa0992ba57bdb16, type: 3}
+    - {fileID: -1160703644, guid: dcc2a949435e1454fb2cfbadd18e163e, type: 3}
+    - {fileID: -86065058, guid: dcc2a949435e1454fb2cfbadd18e163e, type: 3}
+    - {fileID: -1160703644, guid: dcc2a949435e1454fb2cfbadd18e163e, type: 3}
+    - {fileID: -585958495, guid: dcc2a949435e1454fb2cfbadd18e163e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

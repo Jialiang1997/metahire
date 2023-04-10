@@ -70,6 +70,14 @@ public class MessageList : MonoBehaviour
         GameObject go = transform.gameObject;
         go.name = "Element " + mCounter;
         mCounter++;
+        StartCoroutine(SelfDestruct(go));
+    }
+
+    private IEnumerator SelfDestruct(GameObject go)
+    {
+        yield return new WaitForSeconds(4);
+        Destroy(go);
+        mCounter--;
     }
 
 
