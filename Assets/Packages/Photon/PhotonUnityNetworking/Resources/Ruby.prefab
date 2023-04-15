@@ -403,10 +403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46e67e3bd7a7c44bb273f46f84e53b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _speed: 7
   _anim: {fileID: 3972903155324676248}
   _rbody: {fileID: 3972903155324676255}
-  _playerCamera: {fileID: 6361433723488680346}
   _playerCMCamera: {fileID: 0}
   _nameTag: {fileID: 7387991074336194530}
   _walkAudio: {fileID: 7681628462387438813}

@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46e67e3bd7a7c44bb273f46f84e53b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _speed: 7
   _anim: {fileID: 5683480831495308512}
   _rbody: {fileID: 5683480831495308519}
   _playerCMCamera: {fileID: 5928056156923818021}

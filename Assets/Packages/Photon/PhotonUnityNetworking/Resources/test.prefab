@@ -93,7 +93,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &4153701211062950488
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110,7 +110,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &4153701211062950495
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -170,13 +171,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46e67e3bd7a7c44bb273f46f84e53b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: 0
-  chair: {fileID: 0}
-  _speed: 5
+  _speed: 7
   _anim: {fileID: 4153701211062950488}
   _rbody: {fileID: 4153701211062950494}
-  _playerCamera: {fileID: 783193275837998761, guid: c2d5af31a49e6de41a7985994abc07e7,
-    type: 3}
+  _playerCMCamera: {fileID: 0}
   _nameTag: {fileID: 0}
   _walkAudio: {fileID: 8771236970835503758, guid: 78db7b1e41ebcf245b09ec52049b4643,
     type: 3}
