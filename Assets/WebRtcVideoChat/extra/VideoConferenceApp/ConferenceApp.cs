@@ -239,7 +239,7 @@ namespace Byn.Unity.Examples
             }
             mVideoUiElements.Clear();
             CleanupCall();
-            SetGuiState(true);
+            //SetGuiState(true);
         }
 
         /// <summary>

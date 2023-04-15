@@ -13739,6 +13739,7 @@ GameObject:
   - component: {fileID: 222192830354712433}
   - component: {fileID: 114859587159845315}
   - component: {fileID: 114818613815003667}
+  - component: {fileID: 224991905564745048}
   m_Layer: 5
   m_Name: ConferenceApp
   m_TagString: Untagged
@@ -13763,7 +13764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1201930258105089
 GameObject:
   m_ObjectHideFlags: 0
@@ -14313,18 +14314,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1261927746321097}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &114272711928085127
 MonoBehaviour:
@@ -15817,6 +15806,18 @@ RectTransform:
   m_AnchoredPosition: {x: -7, y: -18}
   m_SizeDelta: {x: 264, y: 158.1}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &224991905564745048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133093648707955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726917737b6a37041a20239d49ef07c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4680353238438894404
 RectTransform:
   m_ObjectHideFlags: 0
