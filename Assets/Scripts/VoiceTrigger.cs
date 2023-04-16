@@ -57,7 +57,10 @@ public class VoiceTrigger : MonoBehaviour
             _canvas = transform.parent.GetComponentInChildren<Canvas>();
             if (!_canvas) Debug.LogError($"{gameObject.name}:{nameof(VoiceTrigger)}.{nameof(_canvas)} is not defined");
         }
+
+#if UNITY_EDITOR
         if (_canvas) instanceID = GetObjectLocalIdInFile(_canvas);
+#endif
     }
 
     /// <summary>
@@ -96,7 +99,7 @@ public class VoiceTrigger : MonoBehaviour
         ToggleDialog(!_enterRoomImage.enabled);
     }
 
-
+#if UNITY_EDITOR
     public static long GetObjectLocalIdInFile(UnityEngine.Object _object)
     {
         long idInFile = 0;
@@ -113,5 +116,5 @@ public class VoiceTrigger : MonoBehaviour
 #endif
         return idInFile;
     }
-
+#endif
 }
