@@ -4,14 +4,17 @@ using System.Reflection;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VoiceTrigger : MonoBehaviour
 {
     public static event EventHandler<EnterRoomEventArgs> EnterRoomEvent;
     public static event EventHandler LeaveChannelEvent;
 
-    [SerializeField] private TextMeshProUGUI _tipImage;
-    [SerializeField] private TextMeshProUGUI _enterRoomImage;
+    [SerializeField] private Toggle _toggleUI;
+    [SerializeField] private TextMeshProUGUI _connectTip;
+    [SerializeField] private TextMeshProUGUI _connectedDesc;
+    [SerializeField] private TextMeshProUGUI _roomlabel;
     [SerializeField] private Collider2D _voiceTriggerArea;
     [SerializeField] private Canvas _canvas;
 
@@ -22,35 +25,46 @@ public class VoiceTrigger : MonoBehaviour
 
     private void Start()
     {
-        _tipImage.enabled = true;
-        _enterRoomImage.enabled = false;
-    }
-
-    private void Update()
-    {
-        if (_entered && Input.GetKeyDown(KeyCode.E))
-            ToggleDialog();
+        _connectTip.enabled = true;
+        _connectedDesc.enabled = false;
+        ToggleUI(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetPhotonView().IsMine)
+        {
             _entered = true;
+            ToggleUI(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.GetPhotonView().IsMine)
         {
-            ToggleDialog(false);
             _entered = false;
+            ToggleDialog(false);
+            ToggleUI(false);
         }
+    }
+
+    private void ToggleUI(bool value)
+    {
+        _roomlabel.gameObject.SetActive(!value);
+        _toggleUI.gameObject.SetActive(value);
     }
 
     private void OnValidate()
     {
-        if (!_tipImage) Debug.LogWarning("Missing tip for triggering voice chat");
-        if (!_enterRoomImage) Debug.LogWarning("Missing tip for chatting");
+        if (!_connectTip) Debug.LogWarning("Missing tip for triggering voice chat");
+        if (!_connectedDesc) Debug.LogWarning("Missing tip for chatting");
+        if (!_toggleUI)
+        {
+            var comp = _connectTip ? _connectTip : _connectedDesc;
+            if (comp) _toggleUI = comp.GetComponentInParent<Toggle>();
+            if (_toggleUI == null) Debug.LogWarning("Missing tip for chatting");
+        }
         if (!_voiceTriggerArea) _voiceTriggerArea = GetComponent<Collider2D>();
         if (!_canvas)
         {
@@ -74,8 +88,9 @@ public class VoiceTrigger : MonoBehaviour
             return;
         }
 
-        _tipImage.enabled = !value;
-        _enterRoomImage.enabled = value;
+        _connectTip.enabled = !value;
+        _connectedDesc.enabled = value;
+        _toggleUI.SetIsOnWithoutNotify(value); // ensure Toggle UI changed as changes made by events
 
         if (value)
         {
@@ -96,7 +111,7 @@ public class VoiceTrigger : MonoBehaviour
 
     public void ToggleDialog()
     {
-        ToggleDialog(!_enterRoomImage.enabled);
+        ToggleDialog(!_connectedDesc.enabled);
     }
 
 #if UNITY_EDITOR

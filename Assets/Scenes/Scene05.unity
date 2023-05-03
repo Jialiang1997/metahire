@@ -2415,8 +2415,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 698021710}
-  _enterRoomImage: {fileID: 698021709}
+  _toggleUI: {fileID: 698021711}
+  _connectTip: {fileID: 698021710}
+  _connectedDesc: {fileID: 698021709}
+  _roomlabel: {fileID: 1166181949}
   _voiceTriggerArea: {fileID: 226374461}
   _canvas: {fileID: 698021708}
   instanceID: 698021708
@@ -2491,8 +2493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 437658908}
-  _enterRoomImage: {fileID: 437658907}
+  _toggleUI: {fileID: 437658909}
+  _connectTip: {fileID: 437658908}
+  _connectedDesc: {fileID: 437658907}
+  _roomlabel: {fileID: 570473039}
   _voiceTriggerArea: {fileID: 235972463}
   _canvas: {fileID: 437658906}
   instanceID: 437658906
@@ -3346,8 +3350,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 437658908}
-  _enterRoomImage: {fileID: 437658907}
+  _toggleUI: {fileID: 437658909}
+  _connectTip: {fileID: 437658908}
+  _connectedDesc: {fileID: 437658907}
+  _roomlabel: {fileID: 570473039}
   _voiceTriggerArea: {fileID: 294460936}
   _canvas: {fileID: 437658906}
   instanceID: 437658906
@@ -4029,8 +4035,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 1998854882}
-  _enterRoomImage: {fileID: 1998854881}
+  _toggleUI: {fileID: 1998854883}
+  _connectTip: {fileID: 1998854882}
+  _connectedDesc: {fileID: 1998854881}
+  _roomlabel: {fileID: 895227556}
   _voiceTriggerArea: {fileID: 363766561}
   _canvas: {fileID: 1998854880}
   instanceID: 1998854880
@@ -4719,6 +4727,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 449526239970281008, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5712483774323689113, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: m_RootOrder
@@ -4779,26 +4792,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnterVoiceChat (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5712483776054798907, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: m_Size.x
@@ -4824,25 +4817,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 6.8
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
+      propertyPath: m_Size.x
+      value: 17.8
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
+      propertyPath: m_Size.y
+      value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
+      propertyPath: m_Center.x
+      value: 0.6
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      propertyPath: m_Center.y
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f, type: 3}
@@ -4880,6 +4873,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &437658909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4667515668234467673, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 437658904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &444295240
@@ -5976,6 +5981,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.102703094, y: 0.3835733}
   m_EdgeRadius: 0
+--- !u!114 &570473039 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 177151677916356059, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 437658904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &584200452
 GameObject:
   m_ObjectHideFlags: 0
@@ -7282,6 +7299,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 449526239970281008, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5712483774323689113, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: m_RootOrder
@@ -7342,26 +7364,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnterVoiceChat (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5712483774843331633, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -7397,25 +7399,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
+      propertyPath: m_Size.x
+      value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      propertyPath: m_Size.y
+      value: 6.44
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f, type: 3}
@@ -7453,6 +7445,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &692744072 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4667515668234467673, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 692744067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &695435292
@@ -7520,6 +7524,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 449526239970281008, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5712483774323689113, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: m_RootOrder
@@ -7580,26 +7589,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnterVoiceChat (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5712483774843331633, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7630,25 +7619,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 3.2
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
+      propertyPath: m_Size.x
+      value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
+      propertyPath: m_Size.y
+      value: 8.6
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
+      propertyPath: m_Center.x
+      value: 0.7
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      propertyPath: m_Center.y
+      value: 0.68
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f, type: 3}
@@ -7686,6 +7675,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &698021711 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4667515668234467673, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 698021706}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &703042024
@@ -8981,8 +8982,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 698021710}
-  _enterRoomImage: {fileID: 698021709}
+  _toggleUI: {fileID: 698021711}
+  _connectTip: {fileID: 698021710}
+  _connectedDesc: {fileID: 698021709}
+  _roomlabel: {fileID: 1166181949}
   _voiceTriggerArea: {fileID: 832074464}
   _canvas: {fileID: 698021708}
   instanceID: 698021708
@@ -9173,8 +9176,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 1998854882}
-  _enterRoomImage: {fileID: 1998854881}
+  _toggleUI: {fileID: 1998854883}
+  _connectTip: {fileID: 1998854882}
+  _connectedDesc: {fileID: 1998854881}
+  _roomlabel: {fileID: 895227556}
   _voiceTriggerArea: {fileID: 847934627}
   _canvas: {fileID: 1998854880}
   instanceID: 1998854880
@@ -9378,6 +9383,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23718, y: 0.073369026}
   m_EdgeRadius: 0
+--- !u!114 &895227556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 177151677916356059, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1998854878}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910131758
 GameObject:
   m_ObjectHideFlags: 0
@@ -10087,8 +10104,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 698021710}
-  _enterRoomImage: {fileID: 698021709}
+  _toggleUI: {fileID: 698021711}
+  _connectTip: {fileID: 698021710}
+  _connectedDesc: {fileID: 698021709}
+  _roomlabel: {fileID: 1166181949}
   _voiceTriggerArea: {fileID: 963818727}
   _canvas: {fileID: 698021708}
   instanceID: 698021708
@@ -10279,8 +10298,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 692744071}
-  _enterRoomImage: {fileID: 692744070}
+  _toggleUI: {fileID: 692744072}
+  _connectTip: {fileID: 692744071}
+  _connectedDesc: {fileID: 692744070}
+  _roomlabel: {fileID: 1813793763}
   _voiceTriggerArea: {fileID: 994530495}
   _canvas: {fileID: 692744069}
   instanceID: 692744069
@@ -10869,8 +10890,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 437658908}
-  _enterRoomImage: {fileID: 437658907}
+  _toggleUI: {fileID: 437658909}
+  _connectTip: {fileID: 437658908}
+  _connectedDesc: {fileID: 437658907}
+  _roomlabel: {fileID: 570473039}
   _voiceTriggerArea: {fileID: 1055933788}
   _canvas: {fileID: 437658906}
   instanceID: 437658906
@@ -11405,8 +11428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 698021710}
-  _enterRoomImage: {fileID: 698021709}
+  _toggleUI: {fileID: 698021711}
+  _connectTip: {fileID: 698021710}
+  _connectedDesc: {fileID: 698021709}
+  _roomlabel: {fileID: 1166181949}
   _voiceTriggerArea: {fileID: 1142407930}
   _canvas: {fileID: 698021708}
   instanceID: 698021708
@@ -11811,6 +11836,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15343809, y: 0.044368744}
   m_EdgeRadius: 0
+--- !u!114 &1166181949 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 177151677916356059, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 698021706}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1176405183
 GameObject:
   m_ObjectHideFlags: 0
@@ -11914,8 +11951,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 437658908}
-  _enterRoomImage: {fileID: 437658907}
+  _toggleUI: {fileID: 437658909}
+  _connectTip: {fileID: 437658908}
+  _connectedDesc: {fileID: 437658907}
+  _roomlabel: {fileID: 570473039}
   _voiceTriggerArea: {fileID: 1183733474}
   _canvas: {fileID: 437658906}
   instanceID: 437658906
@@ -13055,8 +13094,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 1998854882}
-  _enterRoomImage: {fileID: 1998854881}
+  _toggleUI: {fileID: 1998854883}
+  _connectTip: {fileID: 1998854882}
+  _connectedDesc: {fileID: 1998854881}
+  _roomlabel: {fileID: 895227556}
   _voiceTriggerArea: {fileID: 1309767211}
   _canvas: {fileID: 1998854880}
   instanceID: 1998854880
@@ -14198,8 +14239,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 437658908}
-  _enterRoomImage: {fileID: 437658907}
+  _toggleUI: {fileID: 437658909}
+  _connectTip: {fileID: 437658908}
+  _connectedDesc: {fileID: 437658907}
+  _roomlabel: {fileID: 570473039}
   _voiceTriggerArea: {fileID: 1420848290}
   _canvas: {fileID: 437658906}
   instanceID: 437658906
@@ -15507,8 +15550,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 1998854882}
-  _enterRoomImage: {fileID: 1998854881}
+  _toggleUI: {fileID: 1998854883}
+  _connectTip: {fileID: 1998854882}
+  _connectedDesc: {fileID: 1998854881}
+  _roomlabel: {fileID: 895227556}
   _voiceTriggerArea: {fileID: 1529081300}
   _canvas: {fileID: 1998854880}
   instanceID: 1998854880
@@ -16349,8 +16394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 1998854882}
-  _enterRoomImage: {fileID: 1998854881}
+  _toggleUI: {fileID: 1998854883}
+  _connectTip: {fileID: 1998854882}
+  _connectedDesc: {fileID: 1998854881}
+  _roomlabel: {fileID: 895227556}
   _voiceTriggerArea: {fileID: 1659387549}
   _canvas: {fileID: 1998854880}
   instanceID: 1998854880
@@ -16425,8 +16472,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 437658908}
-  _enterRoomImage: {fileID: 437658907}
+  _toggleUI: {fileID: 437658909}
+  _connectTip: {fileID: 437658908}
+  _connectedDesc: {fileID: 437658907}
+  _roomlabel: {fileID: 570473039}
   _voiceTriggerArea: {fileID: 1659394981}
   _canvas: {fileID: 437658906}
   instanceID: 437658906
@@ -17014,26 +17063,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnterVoiceChat
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5712483776054798907, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: m_Size.x
@@ -17057,27 +17086,17 @@ PrefabInstance:
     - target: {fileID: 5712483776054798908, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: instanceID
-      value: 1705817737
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
+      propertyPath: m_Size.x
+      value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      propertyPath: m_Size.y
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f, type: 3}
@@ -17242,8 +17261,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 437658908}
-  _enterRoomImage: {fileID: 437658907}
+  _toggleUI: {fileID: 437658909}
+  _connectTip: {fileID: 437658908}
+  _connectedDesc: {fileID: 437658907}
+  _roomlabel: {fileID: 570473039}
   _voiceTriggerArea: {fileID: 1719096947}
   _canvas: {fileID: 437658906}
   instanceID: 437658906
@@ -17849,6 +17870,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25682402, y: 1.354187}
   m_EdgeRadius: 0
+--- !u!114 &1813793763 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 177151677916356059, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 692744067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1822581411
 GameObject:
   m_ObjectHideFlags: 0
@@ -19446,6 +19479,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 449526239970281008, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5712483774323689113, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: m_RootOrder
@@ -19506,26 +19544,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnterVoiceChat (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712483774793819080, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5712483776054798907, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
       propertyPath: m_Size.x
@@ -19551,25 +19569,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 8.2
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
+      propertyPath: m_Size.x
+      value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
+      propertyPath: m_Size.y
+      value: 17.3
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
+      propertyPath: m_Center.x
+      value: -0.3
       objectReference: {fileID: 0}
-    - target: {fileID: 5712483776285753098, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    - target: {fileID: 5785219010051724883, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
         type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      propertyPath: m_Center.y
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f, type: 3}
@@ -19607,6 +19625,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1998854883 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4667515668234467673, guid: 0a0a88b5fe2b67e49a1cc1436850dd0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1998854878}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2001489334
@@ -20406,8 +20436,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32093d15cfd4e440a4c42a37bc93982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tipImage: {fileID: 437658908}
-  _enterRoomImage: {fileID: 437658907}
+  _toggleUI: {fileID: 437658909}
+  _connectTip: {fileID: 437658908}
+  _connectedDesc: {fileID: 437658907}
+  _roomlabel: {fileID: 570473039}
   _voiceTriggerArea: {fileID: 2047890141}
   _canvas: {fileID: 437658906}
   instanceID: 437658906

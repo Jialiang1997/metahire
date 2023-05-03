@@ -2,6 +2,7 @@
 using Photon.Pun;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 /// <summary>
 ///     控制角色移动、生命、动画
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviourPun
             var o = GameObject.FindWithTag("CameraConfiner");
             var b = _playerCMCamera.GetComponent<CinemachineConfiner2D>();
             if (o && b) b.m_BoundingShape2D = o.GetComponent<Collider2D>();
-            
+            Camera.main.GetUniversalAdditionalCameraData().volumeTrigger = transform;
         }
         else
         {

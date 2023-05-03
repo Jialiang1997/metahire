@@ -21,11 +21,11 @@ public class RoomItemControl : MonoBehaviour
 
     public void Init(string name, int gamersCount, int capacity)
     {
-        _nameText.text = name;
-        _gamersCountText.text = $"{gamersCount} / {_capacity}";
         _joinButton.onClick.AddListener(() => { PhotonNetwork.JoinRoom(name); });
 
+        _nameText.text = name;
         _capacity = capacity;
+        _gamersCountText.text = $"{gamersCount} / {_capacity}";
     }
 
     public void SetGamersCount(int gamersCount) => _gamersCountText.text = $"{gamersCount} / {_capacity}";
